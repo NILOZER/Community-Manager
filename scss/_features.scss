@@ -1,0 +1,27 @@
+//
+// _features.scss
+//
+
+/*********************************/
+/*         Features              */
+/*===============================*/
+.features {
+    .title {
+        transition: all 0.5s ease;
+        &:hover {
+            color: $primary !important;
+        }
+    }
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px 35px 20px;
+    }
+
+    &.no-hover-effect {
+        &:hover {
+            transform: scale(1) !important;
+            background: transparent !important;
+        }
+    }
+}
