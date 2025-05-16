@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Community Manager</title>
+	    <meta name="description" content="Bootstrap 5 Landing Template" />
+	   
+	    <meta name="version" content="1.0.0" />
+	    <!-- favicon -->
+        <link rel="icon" href="img/logog/qp.png" type="image/png">
+		<!-- Bootstrap core CSS -->
+	    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+	    <!-- Custom  Css -->
+	    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+	</head>
+
+	<body>
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <a class="logo" href="index.html">
+                    <span class="logo-light-mode">
+                        <img src="img/logog/qp.png" class="l-dark" alt="">
+                        <img src="img/logog/qp.png"  class="l-light" alt="">
+                    </span>
+                    <img src="img/logog/qp.png" class="logo-dark-mode" alt="">
+                </a>
+
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="buy-button list-inline mb-0">
+                    <li class="list-inline-item mb-0">
+                        <div class="dropdown">
+                            <button type="button" class="dropdown-toggle btn btn-sm p-0 border-0" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="search" class="fea icon-20 login-btn-primary"></i>
+                                <i data-feather="search" class="fea icon-20 text-white login-btn-light"></i>
+                            </button>
+                            <div class="dropdown-menu dd-menu dropdown-menu-end bg-white rounded border-0 mt-3 p-0" style="width: 240px;">
+                                <div class="search-bar">
+                                    <div id="itemSearch" class="menu-search mb-0">
+                                        <form role="search" method="get" id="searchItemform" class="searchform">
+                                            <input type="text" class="form-control rounded border" name="s" id="searchItem" placeholder="Search...">
+                                            <input type="submit" id="searchItemsubmit" value="Search">
+                                            <i data-feather="search" class="icons"></i>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="list-inline-item ps-1 mb-0">
+                        <a href="javascript:void(0)" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="btn btn-sm btn-icon btn-pills btn-primary"><i data-feather="settings" class="fea icon-sm"></i></div>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item ps-1 mb-0">
+                        <a href="" class="btn btn-sm btn-primary">войти в аккаунт</a>
+                    </li>
+                </ul>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-right nav-light">
+                        <li class="has-submenu parent-menu-item">
+                            <a href="javascript:void(0)">Главная</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="index.html" class="sub-menu-item">Пример1</a></li>
+                                <li><a href="onepage.html" class="sub-menu-item">пример2</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="aboutus.html" class="sub-menu-item">мы</a></li>
+                        
+                        <li><a href="services.html" class="sub-menu-item">сервисы</a></li>
+                
+                        <li class="has-submenu parent-parent-menu-item">
+                            <a href="javascript:void(0)">Помощь</a><span class="menu-arrow"></span>
+                            <ul class="submenu">
+                                <li><a href="service-detail.html" class="sub-menu-item">детали сервисов</a></li>
+                                <li><a href="pricing.html" class="sub-menu-item">Поддержать</a></li>
+                                <li><a href="testimonial.html" class="sub-menu-item">Отзывы</a></li>
+
+                                <li class="has-submenu parent-menu-item">
+                                    <a href="javascript:void(0)"> Хелпцент </a><span class="submenu-arrow"></span>
+                                    <ul class="submenu">
+                                        <li><a href="helpcenter-faqs.html" class="sub-menu-item">часто задаваемые вопросы</a></li>
+                                        <li><a href="helpcenter-guides.html" class="sub-menu-item">быстрые решения</a></li>
+                                        <li><a href="helpcenter-support.html" class="sub-menu-item">поддержка/связь</a></li>
+                                    </ul>  
+                                </li>
+
+                                <li class="navbar__item">
+                                    <a href="blog-detail.html" class="navbar__link">
+                                      </i><span>Блог</span>
+                                    </a>
+                                  </li>
+                            </ul>
+                        </li>
+                
+                        <li><a href="contactus.html" class="sub-menu-item">Contact Us</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div>
+        </header>
+        <!-- Navbar End -->
+
+        <!-- Hero Start -->
+        <section class="bg-half-260" id="home">
+            <div class="bg-overlay bg-gradient-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center mt-5">
+                    <div class="col-lg-7 col-md-8 order-md-1 order-2">
+                        <div class="title-heading">
+                            <h1 class="heading text-white title-dark fw-bold mb-4 text-capitalize">Мы — современная платформа управления  <br> ЖКХ  </h1>
+                            <p class="para-desc text-white-50">созданная для удобства жителей, управляющих компаний и представителей ТСЖ.</p>
+                            
+                            <!-- <div class="mt-4 pt-2">
+                                <a href="javascript:void(0)" class="btn btn-primary me-1">мы</a>
+                                <a href="javascript:void(0)" class="btn btn-soft-primary">команда</a>
+                            </div> -->
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-5 col-md-4 order-md-2 order-1">
+                        <div class="d-md-flex justify-content-center">
+                            <a href="https://youtu.be/u_867DEtmzw?si=qj6BR49BsAKjDrbR" class="avatar avatar-md-md rounded-pill shadow bg-white d-flex justify-content-center align-items-center">
+                                <i class="mdi mdi-play mdi-24px text-primary"></i>
+                            </a>
+                            
+                            </a>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Features Start -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 order-1 order-md-2">
+                        <div class="features-absolute">
+                            <div class="p-4 rounded shadow position-relative bg-white">
+                                <div class="section-title">
+                                    <h4 class="title mb-3">Оплата комм услуг</h4>
+                                    <p class="mb-0 text-muted">Мы сделали процесс оплаты коммунальных услуг простым и удобным.</p>
+                                </div>
+    
+                                <form class="mt-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label fw-semibold" for="name">Ваше имя : </label>
+                                                <input name="name" id="name" type="text" class="form-control" placeholder="Имя :">
+                                            </div>
+                                        </div><!--end col-->                               
+        
+                                        <div class="col-md-6 col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label fw-semibold" for="email"> Номер квартиры: </label>
+                                                <input name="email" id="email" type="email" class="form-control" placeholder="кв:">
+                                            </div> 
+                                        </div><!--end col-->  
+        
+                                        <div class="col-md-6 col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label fw-semibold" for="number2">Номер телефона: </label>
+                                                <input name="number" type="number" class="form-control" id="number2" placeholder="номер :">
+                                            </div> 
+                                        </div><!--end col--> 
+        
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="form-label fw-semibold">Я хочу оплатить:</label>
+                                                <select class="form-select form-control" name="item_name">
+                                                    <option value="Donate For Food">Горячая Вода</option>
+                                                    <option value="Food For Orphan">Холодная вода</option>
+                                                    <option value="Home For Homeless">Элекричество</option>
+                                                    <option value="Holyday Gifts In Kind">Меороприятия</option>
+                                                    <option value="For clean Water in Africa">Газ</option>
+                                                    <option value="Health and Rights">Вывоз мусора и чистоту подьезда</option>
+                                                </select>
+                                            </div>
+                                        </div><!--end col-->
+        
+                                        <div class="col-12">
+                                            <label class="form-label fw-semibold">Сумма</label>
+                                            <div class="mb-3">
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">₸</span>
+                                                    <input type="number" class="form-control" min="1" max="1000" placeholder="Введите сумму" id="amount" aria-describedby="inputGroupPrepend" required>
+                                                </div>
+                                            </div>
+                                        </div><!--end col-->                                                                                                          
+        
+                                        <div class="col-12 mt-3">
+                                            <button type="submit" id="donatefund" name="send" class="btn btn-primary">Оплатить</button>
+                                        </div><!--end col-->
+                                    </div><!--end row-->
+                                </form>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-8 col-md-6 order-2 order-md-1">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="position-relative">
+                                    <div class="me-4">
+                                        <img src="images/about/1.jpg" class="img-fluid rounded shadow" alt="">
+                                    </div>
+                                    
+                                    <div class="position-absolute end-0 top-50">
+                                        <div class="position-relative overflow-hidden rounded shadow">
+                                            <img src="images/about/2.jpg" class="img-fluid avatar avatar-xl-large" alt="">
+                                            <div class="bg-overlay bg-primary opacity-75"></div>
+
+                                            <div class="position-absolute top-50 start-50 translate-middle">
+                                                <div class="counter-box text-center">
+                                                    <h2 class="fw-bold mb-0 text-white"><span class="counter-value" data-target="40">1</span></h2>
+                                                    <p class="counter-head small fw-semibold text-white mb-0"> соседей уже поддержали нас! </p>
+                                                </div><!--end counter box-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+        
+                            <div class="col-lg-6 col-md-12 mt-4 pt-2 mt-lg-0 pt-lg-0">
+                                <div class="section-title">
+                                    <h6 class="fw-normal text-primary">Празднование Дня Победы</h6>
+                                    <h4 class="title mb-4">Программа  <br> мероприятия:</h4>
+        
+                                    <p class="text-muted mb-0">Парад и шествие: Торжественное шествие ветеранов и жителей района в честь героического прошлого.
+
+                                        Митинг памяти: Вечная слава нашим героям! Митинг у памятника, возложение цветов.
+                                        
+                                        Концерт и выступления: Музыкальные и театральные номера, посвященные Победе, участие местных артистов и школьников.
+                                        
+                                        Праздничный ужин: Совместный обед с ветеранами, чаепитие для всех желающих.</p>
+                                
+                                    <div class="mt-4">
+                                        <a href="" class="btn btn-primary">Подбробьнее<i class="mdi mdi-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-3">Можете поддержать что-то другое.</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Вы можете выделить средства или записаться на события для участия и оказания помощи.    </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="position-relative rounded bg-white shadow overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/cause/1.jpg" class="img-fluid" alt="">
+                                <div class="bg-overlay bg-linear-gradient-2"></div>
+                                <div class="position-absolute bottom-0 p-4">
+                                    <a href="" class="text-white title-dark fw-semibold link-title">подробнее <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="content p-4">
+                                <h5><a href="" class="text-dark link-title">Ремонт и обновление подъездов:</a></h5>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="progress-box mt-5">
+                                    <div class="progress rounded" style="height: 8px;">
+                                        <div class="progress-bar position-relative bg-primary rounded" style="width:60%;">
+                                            <div class="progress-value d-block text-dark h6 mb-0">Raised 60% of $10000</div>
+                                        </div>
+                                    </div>
+                                </div><!--end process box-->
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="text-muted mb-0">₸ 6000</h6>
+                                    <h6 class="text-muted mb-0">₸ 10000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="position-relative rounded bg-white shadow overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/cause/2.jpg" class="img-fluid" alt="">
+                                <div class="bg-overlay bg-linear-gradient-2"></div>
+                                <div class="position-absolute bottom-0 p-4">
+                                    <a href="" class="text-white title-dark fw-semibold link-title">подробнее <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="content p-4">
+                                <h5><a href="" class="text-dark link-title">Зеленые зоны:</a></h5>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="progress-box mt-5">
+                                    <div class="progress rounded" style="height: 8px;">
+                                        <div class="progress-bar position-relative bg-primary rounded" style="width:60%;">
+                                            <div class="progress-value d-block text-dark h6 mb-0">Raised 60% of $10000</div>
+                                        </div>
+                                    </div>
+                                </div><!--end process box-->
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="text-muted mb-0">₸ 6000</h6>
+                                    <h6 class="text-muted mb-0">₸ 10000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="position-relative rounded bg-white shadow overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/cause/3.jpg" class="img-fluid" alt="">
+                                <div class="bg-overlay bg-linear-gradient-2"></div>
+                                <div class="position-absolute bottom-0 p-4">
+                                    <a href="" class="text-white title-dark fw-semibold link-title">подробнее <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="content p-4">
+                                <h5><a href="" class="text-dark link-title">Общее собрание или мероприятия:</a></h5>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="progress-box mt-5">
+                                    <div class="progress rounded" style="height: 8px;">
+                                        <div class="progress-bar position-relative bg-primary rounded" style="width:60%;">
+                                            <div class="progress-value d-block text-dark h6 mb-0">Raised 60% of $10000</div>
+                                        </div>
+                                    </div>
+                                </div><!--end process box-->
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="text-muted mb-0">₸ 6000</h6>
+                                    <h6 class="text-muted mb-0">₸ 10000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="position-relative rounded bg-white shadow overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/cause/4.jpg" class="img-fluid" alt="">
+                                <div class="bg-overlay bg-linear-gradient-2"></div>
+                                <div class="position-absolute bottom-0 p-4">
+                                    <a href="" class="text-white title-dark fw-semibold link-title">подробнее <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="content p-4">
+                                <h5><a href="" class="text-dark link-title">Установка инфраструктуры для удобства жителей:</a></h5>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="progress-box mt-5">
+                                    <div class="progress rounded" style="height: 8px;">
+                                        <div class="progress-bar position-relative bg-primary rounded" style="width:60%;">
+                                            <div class="progress-value d-block text-dark h6 mb-0">Raised 60% of $10000</div>
+                                        </div>
+                                    </div>
+                                </div><!--end process box-->
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="text-muted mb-0">₸ 6000</h6>
+                                    <h6 class="text-muted mb-0">₸ 10000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="position-relative rounded bg-white shadow overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/cause/5.jpg" class="img-fluid" alt="">
+                                <div class="bg-overlay bg-linear-gradient-2"></div>
+                                <div class="position-absolute bottom-0 p-4">
+                                    <a href="" class="text-white title-dark fw-semibold link-title">подробнее <i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="content p-4">
+                                <h5><a href="" class="text-dark link-title">Поддержка безопасности:</a></h5>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="progress-box mt-5">
+                                    <div class="progress rounded" style="height: 8px;">
+                                        <div class="progress-bar position-relative bg-primary rounded" style="width:60%;">
+                                            <div class="progress-value d-block text-dark h6 mb-0">Raised 60% of $10000</div>
+                                        </div>
+                                    </div>
+                                </div><!--end process box-->
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="text-muted mb-0">₸ 6000</h6>
+                                    <h6 class="text-muted mb-0">₸ 10000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                        <div class="position-relative rounded bg-white shadow overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img src="images/cause/6.jpg" class="img-fluid" alt="">
+                                <div class="bg-overlay bg-linear-gradient-2"></div>
+                                <div class="position-absolute bottom-0 p-4">
+                                    <a href="" class="text-white title-dark fw-semibold link-title">подробнее<i class="mdi mdi-arrow-right"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="content p-4">
+                                <h5><a href="" class="text-dark link-title">Ремонт или строительство нового:</a></h5>
+                                <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="progress-box mt-5">
+                                    <div class="progress rounded" style="height: 8px;">
+                                        <div class="progress-bar position-relative bg-primary rounded" style="width:60%;">
+                                            <div class="progress-value d-block text-dark h6 mb-0">Raised 60% of $10000</div>
+                                        </div>
+                                    </div>
+                                </div><!--end process box-->
+
+                                <div class="d-flex align-items-center justify-content-between mt-3">
+                                    <h6 class="text-muted mb-0">₸ 6000</h6>
+                                    <h6 class="text-muted mb-0">₸ 10000</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- Features End -->
+
+ 
+
+    <!-- Start Team -->
+<section class="section">
+    <div class="container">
+        <!-- Заголовок -->
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title mb-3">
+                        Мы уже помогли <span class="text-primary">более 50 ЖК создать удобные условия</span> для <br>
+                        связи и внедрить новейшие инновации.
+                    </h4>
+                    <p class="text-muted para-desc mx-auto mb-0">
+                        Наша цель — улучшить качество жизни в каждом ЖК, предлагая инновационные решения для удобства жителей и эффективного управления.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Карточки преимуществ -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="position-relative features text-center rounded shadow p-4 pt-5 h-100">
+                    <div class="position-relative d-flex justify-content-center">
+                        <i data-feather="aperture" class="fea icon-md text-primary z-1"></i>
+                        <div class="feature-icon bg-soft-primary position-absolute top-0 translate-middle"></div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="service-detail.html" class="h5 text-dark link-title">Умные технологии</a>
+                        <p class="text-muted mt-3">Инновационные решения для управления ЖК: умные домофоны, онлайн-голосования и многое другое.</p>
+                        <a href="service-detail.html" class="text-primary">Узнать больше <i class="mdi mdi-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="position-relative features text-center rounded shadow p-4 pt-5 h-100">
+                    <div class="position-relative d-flex justify-content-center">
+                        <i data-feather="send" class="fea icon-md text-primary z-1"></i>
+                        <div class="feature-icon bg-soft-primary position-absolute top-0 translate-middle"></div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="service-detail.html" class="h5 text-dark link-title">Обратная связь</a>
+                        <p class="text-muted mt-3">Жители могут легко сообщать о проблемах и предлагать идеи через приложение или сайт.</p>
+                        <a href="service-detail.html" class="text-primary">Узнать больше <i class="mdi mdi-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                <div class="position-relative features text-center rounded shadow p-4 pt-5 h-100">
+                    <div class="position-relative d-flex justify-content-center">
+                        <i data-feather="users" class="fea icon-md text-primary z-1"></i>
+                        <div class="feature-icon bg-soft-primary position-absolute top-0 translate-middle"></div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="service-detail.html" class="h5 text-dark link-title">Сообщество</a>
+                        <p class="text-muted mt-3">Мы объединяем соседей, создавая комфортную и дружелюбную среду для общения и решений.</p>
+                        <a href="service-detail.html" class="text-primary">Узнать больше <i class="mdi mdi-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Сотрудники -->
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-3">Сотрудники</h4>
+                        <p class="text-muted para-desc mx-auto mb-0">Одни из самых молодых и креативных специалистов в нашей команде.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-stretch">
+                <!-- Карточка 1 -->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card team team-primary bg-transparent text-center mb-5 h-100 d-flex flex-column">
+                        <div class="card-img team-image d-inline-block mx-auto rounded overflow-hidden">
+                            <img src="images/team/1.jpg" class="img-fluid" alt="">
+                            <ul class="list-unstyled team-social mb-0">
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="facebook"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="instagram"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content bg-white mx-4 p-4 z-1 rounded shadow">
+                            <a href="#" class="text-dark h5 mb-0 title">Иван Петров</a>
+                            <h6 class="text-muted mb-0 mt-1 fw-normal">Главный инженер</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card team team-primary bg-transparent text-center mb-5 h-100 d-flex flex-column">
+                        <div class="card-img team-image d-inline-block mx-auto rounded overflow-hidden">
+                            <img src="images/team/2.jpg" class="img-fluid" alt="">
+                            <ul class="list-unstyled team-social mb-0">
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="facebook"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="instagram"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content bg-white mx-4 p-4 z-1 rounded shadow">
+                            <a href="#" class="text-dark h5 mb-0 title">Екатерина Смирнова</a>
+                            <h6 class="text-muted mb-0 mt-1 fw-normal">Специалист по работе с жителями</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card team team-primary bg-transparent text-center mb-5 h-100 d-flex flex-column">
+                        <div class="card-img team-image d-inline-block mx-auto rounded overflow-hidden">
+                            <img src="images/team/3.jpg" class="img-fluid" alt="">
+                            <ul class="list-unstyled team-social mb-0">
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="facebook"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="instagram"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content bg-white mx-4 p-4 z-1 rounded shadow">
+                            <a href="#" class="text-dark h5 mb-0 title">Алексей Иванов</a>
+                            <h6 class="text-muted mb-0 mt-1 fw-normal">Директор по эксплуатации</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                    <div class="card team team-primary bg-transparent text-center mb-5 h-100 d-flex flex-column">
+                        <div class="card-img team-image d-inline-block mx-auto rounded overflow-hidden">
+                            <img src="images/team/4.jpg" class="img-fluid" alt="">
+                            <ul class="list-unstyled team-social mb-0">
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="facebook"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="instagram"></i></a></li>
+                                <li class="mt-1"><a href="#" class="btn btn-sm btn-pills btn-icon"><i data-feather="twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="content bg-white mx-4 p-4 z-1 rounded shadow">
+                            <a href="#" class="text-dark h5 mb-0 title">Марина Кузнецова</a>
+                            <h6 class="text-muted mb-0 mt-1 fw-normal">Менеджер по обслуживанию зданий</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- End Team -->
+         
+        <!-- Footer Start -->
+        <footer class="bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5">
+                            <div class="row">
+                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                                    <p>Community Manager</p>
+                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                        <li class="list-inline-item"><a href="https://dribbble.com/shreethemes" target="_blank" class="rounded"><i data-feather="dribbble" class="fea icon-sm align-middle" title="dribbble"></i></a></li>
+                                        <li class="list-inline-item"><a href="http://linkedin.com/company/shreethemes" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm align-middle" title="Linkedin"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.facebook.com/shreethemes" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm align-middle" title="facebook"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://www.instagram.com/shreethemes/" target="_blank" class="rounded"><i data-feather="instagram" class="fea icon-sm align-middle" title="instagram"></i></a></li>
+                                        <li class="list-inline-item"><a href="https://twitter.com/shreethemes" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm align-middle" title="twitter"></i></a></li>
+                                    </ul><!--end icon-->
+                                </div><!--end col-->
+                        
+                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h6 class="footer-head text-uppercase small">Company</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="aboutus.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> About us</a></li>
+                                        <li><a href="services.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Services</a></li>
+                                        <li><a href="team.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Team</a></li>
+                                        <li><a href="pricing.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Pricing</a></li>
+                                        <li><a href="blogs.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Blog</a></li>
+                                        <li><a href="login.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Login</a></li>
+                                    </ul>
+                                </div><!--end col-->
+                        
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h6 class="footer-head text-uppercase small">Usefull Links</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li><a href="helpcenter-overview.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Helpcenter</a></li>
+                                        <li><a href="terms.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Terms of Services</a></li>
+                                        <li><a href="privacy.html" class="text-foot"><i class="mdi mdi-chevron-right me-1"></i> Privacy Policy</a></li>
+                                    </ul>
+                                </div><!--end col-->
+    
+                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                    <h6 class="footer-head text-uppercase small">Newsletter</h6>
+                                    <p class="mt-4">Sign up and receive the latest tips via email.</p>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="foot-subscribe mb-3">
+                                                    <label class="form-label">Write your email <span class="text-danger">*</span></label>
+                                                    <div class="form-icon position-relative">
+                                                        <input type="email" name="email" id="submitsubscribe" class="form-control rounded" placeholder="Your email : " required>
+                                                        <div class="position-absolute top-50 end-0 translate-middle-y">
+                                                            <button type="submit" id="submitsubscribe" class="btn btn-sm btn-icon btn-soft-primary me-1">
+                                                                <i data-feather="send" class="icons"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="py-5 footer-bar">
+                            <div class="container text-center">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-6">
+                                        <div class="text-sm-start">
+                                            <a href="#" class="logo-footer">
+                                                <img src="images/logo-light.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div><!--end col-->
+        
+                                    <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                        <ul class="list-unstyled footer-list terms-service text-sm-end mb-0">
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium me-2"><i class="mdi mdi-circle-small"></i> Privacy</a></li>
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium me-2"><i class="mdi mdi-circle-small"></i> Terms</a></li>
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium me-2"><i class="mdi mdi-circle-small"></i> FAQs</a></li>
+                                            <li class="list-inline-item mb-0"><a href="javascript:void(0)" class="text-foot fw-medium"><i class="mdi mdi-circle-small"></i> Contact</a></li>
+                                        </ul>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div><!--end container-->
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+
+            <div class="py-4 footer-bar">
+                <div class="container text-center">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12">
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Community Manager. <i class="mdi mdi-heart text-danger"></i> <a href="https://shreethemes.in/" target="_blank" class="text-reset"></a>.</p>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
+
+        <!-- Offcanvas Start -->
+        <div class="offcanvas offcanvas-end shadow border-0" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header p-4 border-bottom">
+                <h5 id="offcanvasRightLabel" class="mb-0">
+                    <img src="img/logog/qp.png" class="light-version" alt="">
+                    <img src="img/logog/qp.png" class="dark-version" alt="">
+                </h5>
+                <button type="button" class="btn-close d-flex align-items-center text-dark" data-bs-dismiss="offcanvas" aria-label="Close"><i class="mdi mdi-close fs-4"></i></button>
+            </div>
+            <div class="offcanvas-body p-4">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="images/contact.png" class="img-fluid" alt="">
+                        <form>
+                            <div class="my-3 text-center">
+                                <h6 class="text-uppercase mb-0 fw-semibold">войти</h6>
+                            </div>
+                        
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold">Email</label>
+                                <input name="email" id="email" type="email" class="form-control" placeholder="example@website.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold" for="loginpass">Password</label>
+                                <input type="password" class="form-control" id="loginpass" placeholder="Password">
+                            </div>
+                        
+                            <div class="d-flex justify-content-between">
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-label form-check-label text-muted" for="flexCheckDefault">Запомнить меня</label>
+                                    </div>
+                                </div>
+                                <span class="forgot-pass text-muted small mb-0"><a href="reset-password.html" class="text-muted">Забыл пароль</a></span>
+                            </div>
+            
+                            <button class="btn btn-primary w-100" type="submit">Войти</button>
+
+                            <div class="col-12 text-center mt-3">
+                                <span><span class="text-muted me-2 small">нет аккаунта</span> <a href="signup.html" class="text-dark fw-semibold small">Регистрация</a></span>
+                            </div><!--end col-->
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="offcanvas-footer p-4 border-top text-center">
+                <ul class="list-unstyled social-icon mb-0">
+                    <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i data-feather="dribbble" class="fea icon-sm align-middle" title="dribbble"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm align-middle" title="Linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm align-middle" title="facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i data-feather="instagram" class="fea icon-sm align-middle" title="instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm align-middle" title="twitter"></i></a></li>
+                </ul><!--end icon-->
+            </div>
+        </div>
+        <!-- Offcanvas End -->
+
+        <!-- Back to top -->
+        <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top rounded fs-5"><i data-feather="arrow-up" class="fea icon-sm align-middle"></i></a>
+        <!-- Back to top -->
+
+        <!-- JAVASCRIPTS -->
+	    <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/easy_background.js"></script>
+        <script src="js/feather.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
+
+	    <!-- Custom -->
+	    <script src="js/plugins.init.js"></script>
+	    <script src="js/app.js"></script>
+
+        <script>
+            easy_background("#home",
+                {
+                    slide: ["images/hero/1.jpg", "images/hero/2.jpg", "images/hero/3.jpg"],
+                    delay: [4000, 4000, 4000]
+                }
+            );
+        </script>
+    </body>
+</html>
